@@ -1,6 +1,8 @@
 ## Bash Basics
 Unix is an operating system that many computer programmers use. Mac OS is built on Unix. Understanding how to use a Unix terminal is important for developers. On a mac, open up the terminal like so:
+
 ![Image of Mac Terminal](http://blog.teamtreehouse.com/wp-content/uploads/2012/09/Screen-Shot-2012-09-25-at-12.57.00-PM.png)
+
 In the terminal you will have a prompt and a cursor blinking. There are several commands that you need to know (the prompt is denoted with the dollar sign $):
 ```
 $ ls                        <--- list the contents of the current directory
@@ -22,3 +24,5 @@ $ ifconfig                  <--- print your systems network configurations (chec
 $ vi FILENAME               <--- vi is a text-editor for the terminal. you can open up a file and edit it, or you can create a new file.
 ```
 Remember that when you enter a command in the terminal you need to hit enter for the terminal to read the command. 
+
+![gif of bash](https://github.com/rmaitra/sonny-learns/blob/master/week1/bash_basics.gif)
