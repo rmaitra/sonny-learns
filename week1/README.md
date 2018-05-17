@@ -70,7 +70,7 @@ You learned the **print** command. Well there are many commands built into pytho
 
 rajs_bank_data = {         # this is the start of the dictionary, notice it is being stored in a VARIABLE
    "total_money":1849575,  # this is an integer that can be accessed by the KEY "total_money"  
-   "account_number: 094859873,
+   "account_number:1094859873,
    "bank_name": "Bank of India"
 } # this is the end of the dictionary
 
