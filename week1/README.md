@@ -53,16 +53,16 @@ The string **Hello World** will be printed to the screen. Easy right? Here is a 
 You learned the **print** command. Well there are many commands built into python. We will get into those. First let's go over data types that you can store information in. These are common to ALL languages:
 
 - strings: basically text. Denoted by the double quotes or single quotes. A lot of programming can be string manipulation. Technically they are arrays of characters (a character being "c" or "e").
-- integers: a whole number like 1 or 5849875.
-- floats: a decimal number like 3.4 or 94875.495. These numbers are stored in memory differently than integers.
-- booleans: True or False. That's it. Those two values and only those two.
-- arrays: a grouping of any of the above data-types in a sequence! An array in python will look something like:
+- **integers**: a whole number like 1 or 5849875.
+- **floats**: a decimal number like 3.4 or 94875.495. These numbers are stored in memory differently than integers.
+- **booleans**: True or False. That's it. Those two values and only those two.
+- **arrays**: a grouping of any of the above data-types in a sequence! An array in python will look something like:
 
 ```python 
 [1, 2, "I am a string", True, 4.5, ["this is an array in an ARRAY!", 23] ]
 ```
 
-- dictionaries (or objects): an object that holds data that can be accessed through a **key**. This is more complicated to understand but is INCREDIBLY important and useful:
+- **dictionaries** (or objects): an object that holds data that can be accessed through a **key**. This is more complicated to understand but is INCREDIBLY important and useful:
 
 ```python
 # below is a dictionary, or in most other languages, an object. it contains KEYS and VALUES. 
@@ -80,3 +80,24 @@ print rajs_bank_data["total_money"]
 print rajs_bank_data["account_number"]
 print rajs_bank_data["bank_name"]
 ``` 
+
+You can store any of these data-types in a variable. Variables can be named whatever you'd like them to be named:
+```python
+oshkosh = "this is a string"
+another_variable_with_a_name = 2039483
+this_is_an_array = [1, 2, 4]
+boolean_variable = True
+i_am_a_dictionary = { "this_is_the_key":"I am some string data in the value part of the dictionary, access me like i_am_a_dictionary['this_is_the_key']" }
+```
+Pretty simple. 
+
+### Operators in Python
+Now you need to manipulate the data! In order to manipulate the data, you need operators. Operators are like:
+```python
+2 + 2 # (plus for addition)
+3 - 4 # (minus for subtraction)
+4 * 5 # (asterisk for multiplication)
+blah_variable_name = 345 # (equals to store data in variables!)
+3454 == "this is a string" # (2 equal signs to return whether two things are the same value) this should return False
+3454 != "this is a string" # (check if 2 pieces of data are NOT equal) this should return True!
+```
