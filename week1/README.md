@@ -26,3 +26,18 @@ $ vi FILENAME               <--- vi is a text-editor for the terminal. you can o
 Remember that when you enter a command in the terminal you need to hit enter for the terminal to read the command. 
 
 ![gif of bash](https://github.com/rmaitra/sonny-learns/blob/master/week1/bash_basics.gif)
+
+**DON'T BE AFRAID OF THE TERMINAL!** People get scared of the terminal, but it's such a wonderful tool and with the right guidance it can be learned easily! 
+
+## Python Basics
+What is python? It's a language. A scripting language to be more specific. It is used by scientists, software developers, accountants, all sorts of people to do anything from manipulating CSV files (your basic Excel files), mining swaths of data across multiple SQL databases, generating jaw-dropping data visualizations, to artificially intelligent bot networks. It's also fairly easy to understand. Coders talk about pointers, or memory allocation, etc; terminology that tends to scare first-time coders. Python removes a lot of that scary behind-the-scenes logic and creates an easy place for coders to learn. 
+
+Let's start by creating a simple python program, open up the terminal, open up your favorite text-editor and create a file:
+
+```python
+# this is a comment in python, denoted by the hashtag in front of this text
+# none of this will be read by the computer when python compiles this file 
+# to binary
+
+print "Hello World"    # <--- this is the print command. we are printing a string to STDOUT (standard output, or in this case, the terminal when we run it)
+```
