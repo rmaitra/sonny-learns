@@ -101,3 +101,10 @@ blah_variable_name = 345 # (equals to store data in variables!)
 3454 == "this is a string" # (2 equal signs to return whether two things are the same value) this should return False
 3454 != "this is a string" # (check if 2 pieces of data are NOT equal) this should return True!
 ```
+You can open up the terminal and play with data types and variables in the **python interpretor** like so:
+```
+$ python 
+```
+Here is a gif doing this:
+
+![gif of python terminal](https://github.com/rmaitra/sonny-learns/blob/master/week1/python_terminal.gif)
