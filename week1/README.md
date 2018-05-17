@@ -41,3 +41,42 @@ Let's start by creating a simple python program, open up the terminal, open up y
 
 print "Hello World"    # <--- this is the print command. we are printing a string to STDOUT (standard output, or in this case, the terminal when we run it)
 ```
+Save the program with the extension **.py**. An example could be **hello_world.py**. Then in the terminal, ```$ cd ``` to the directory in which the file is located and run the python file with:
+```
+$ python hello_world.py
+```
+The string **Hello World** will be printed to the screen. Easy right? Here is a gif of this:
+
+![gif of python helloword](https://github.com/rmaitra/sonny-learns/blob/master/week1/python_hello_world.gif)
+
+### Variables and Data Types in Python
+You learned the **print** command. Well there are many commands built into python. We will get into those. First let's go over data types that you can store information in. These are common to ALL languages:
+
+- strings: basically text. Denoted by the double quotes or single quotes. A lot of programming can be string manipulation. Technically they are arrays of characters (a character being "c" or "e").
+- integers: a whole number like 1 or 5849875.
+- floats: a decimal number like 3.4 or 94875.495. These numbers are stored in memory differently than integers.
+- booleans: True or False. That's it. Those two values and only those two.
+- arrays: a grouping of any of the above data-types in a sequence! An array in python will look something like:
+
+```python 
+[1, 2, "I am a string", True, 4.5, ["this is an array in an ARRAY!", 23] ]
+```
+
+- dictionaries (or objects): an object that holds data that can be accessed through a **key**. This is more complicated to understand but is INCREDIBLY important and useful:
+
+```python
+# below is a dictionary, or in most other languages, an object. it contains KEYS and VALUES. 
+# the values can be accessed in the dictionary via their key. this is a GREAT way to organize data in code
+
+rajs_bank_data = {         # this is the start of the dictionary, notice it is being stored in a VARIABLE
+   "total_money":1849575,  # this is an integer that can be accessed by the KEY "total_money"  
+   "account_number: 094859873,
+   "bank_name": "Bank of India"
+} # this is the end of the dictionary
+
+# the object is being stored in a variable called rajs_bank_data
+# the variable rajs_bank_data is a dictionary
+print rajs_bank_data["total_money"]
+print rajs_bank_data["account_number"]
+print rajs_bank_data["bank_name"]
+``` 
