@@ -52,7 +52,7 @@ The string **Hello World** will be printed to the screen. Easy right? Here is a 
 ### Variables and Data Types in Python
 You learned the **print** command. Well there are many commands built into python. We will get into those. First let's go over data types that you can store information in. These are common to ALL languages:
 
-- strings: basically text. Denoted by the double quotes or single quotes. A lot of programming can be string manipulation. Technically they are arrays of characters (a character being "c" or "e").
+- **strings**: basically text. Denoted by the double quotes or single quotes. A lot of programming can be string manipulation. Technically they are arrays of characters (a character being "c" or "e").
 - **integers**: a whole number like 1 or 5849875.
 - **floats**: a decimal number like 3.4 or 94875.495. These numbers are stored in memory differently than integers.
 - **booleans**: True or False. That's it. Those two values and only those two.
