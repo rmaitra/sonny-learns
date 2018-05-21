@@ -108,3 +108,51 @@ $ python
 Here is a gif doing this:
 
 ![gif of python terminal](https://github.com/rmaitra/sonny-learns/blob/master/week1/python_terminal.gif)
+
+### For Loops, While Loops
+Loops are used to iterate through arrays and objects and do actions on specific elements within the arrays or objects. A **for** loop will iterate from the beginning of an dictionary or array until the end of it:
+
+```python
+for(i in [1,2,3,4]):
+    print i
+    
+# the output of this program will be:
+# 1
+# 2
+# 3
+# 4
+```
+
+A **while** loop will iterate until a condition is met:
+
+```python
+i = 0
+sum = 0
+while(i < 3):
+    sum = sum + i
+    i = i + 1
+    
+    print "i: {}".format(i) # this is a way to print a string and int onto the same line using "{}".format(SOME_INT_VARIABLE)
+    print "sum: {}".format(sum) # this is a way to print a string and integer onto the same line
+
+# the output of this program will be
+i:1
+sum:1
+i:2
+sum:3
+i:3
+sum:6
+```
+
+### Functions in Python
+Functions are small snippets of logic that you can easily call over and over again in a single line of code. Here is an example of a function that will print the contents of any array one element at a time:
+```python
+
+# "def" is a keyword that is used to define a function
+# after "def" we have the name of the function (can be anything)
+# then we have the data that we pass to the function in parantheses
+# this "(array_variable)" is called the arguments
+def this_function_will_print_an_array(array_variable):
+    for(i in array_variable):
+         print i
+``
