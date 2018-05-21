@@ -128,7 +128,7 @@ A **while** loop will iterate until a condition is met:
 ```python
 i = 0
 sum = 0
-while(i < 3):
+while(i <= 3):
     sum = sum + i
     i = i + 1
     
