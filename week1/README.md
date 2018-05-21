@@ -136,12 +136,12 @@ while(i < 3):
     print "sum: {}".format(sum) # this is a way to print a string and integer onto the same line
 
 # the output of this program will be
-i:1
-sum:1
-i:2
-sum:3
-i:3
-sum:6
+# i:1
+# sum:1
+# i:2
+# sum:3
+# i:3
+# sum:6
 ```
 
 ### Functions in Python
@@ -152,7 +152,18 @@ Functions are small snippets of logic that you can easily call over and over aga
 # after "def" we have the name of the function (can be anything)
 # then we have the data that we pass to the function in parantheses
 # this "(array_variable)" is called the arguments
+
 def this_function_will_print_an_array(array_variable):
     for(i in array_variable):
          print i
-``
+         
+new_array = [1,2,"hello","four"]
+this_function_will_print_an_array(new_array)  # call the function "this_function_will_print_an_array"
+
+# output of this program:
+# 1
+# 2
+# hello
+# four
+```
+The reason we create functions is so that we don't have to write the same code a BUNCH of times. We can just call the snippet of logic whenever we need to do it again. 
