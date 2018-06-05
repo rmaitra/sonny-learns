@@ -49,7 +49,7 @@ An index file is the main HTML page that is loaded for a web application. A stan
 </html>
 ```
 
-### HTML Classes and IDs
+### HTML/CSS Classes and IDs
 To style an HTML tag, you can add a **class** or **id** to that HTML tag and add CSS styles. As an example, here is a snippet of html that would change the color and font size of a header tag:
 ```html
 <html>
@@ -76,4 +76,23 @@ To style an HTML tag, you can add a **class** or **id** to that HTML tag and add
 ```
 
 
-### CSS classes and IDs
+### Javascript
+Javascript is the programming language of the web browser. Every browser is able to read javascript. Javascript is a front-end language, front-end because it is used to interact the with very elements that a user will visibly see and touch (via user input). Javascript uses curly brackets ```{}``` and semicolons ```;```. Javascript can be embedded into HTML very easy, here is a sample webpage that produces a popup alert:
+
+```html
+<html>
+   <head>
+      <!-- embedded JS is denoted with script tags -->
+      <script>
+           // this is a function in javascript. when the main button is clicked, it will call this function.
+           function hello_world(){
+                alert("Hello USER!");     // this will produce a pop-up alert printing the words "Hello USER!"
+           }
+      </script>
+   </head>
+   <body>
+       <!-- we use the HTML tag attribute "onclick" to call javascript functions -->
+       <button onclick="hello_world()">Push Me</button> 
+   </body>
+</html>
+```
