@@ -92,6 +92,6 @@ def scrape_stats(url):
      stats_dictionary = format_stats_into_dictionary(parse_html_stats)
      
 # you should be able to feed any player url and your code will be able to scrape the stats     
-get_html("http://theaudl.com/spiders/players/szaccaro")
+scrape_stats("http://theaudl.com/spiders/players/szaccaro")
 
 ```
