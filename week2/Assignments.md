@@ -71,3 +71,27 @@ prices = page_content.find_all(class_='main_price')  # find content on the HTML 
 # you can also access the main_price class by specifying the tag of the class
 prices = page_content.find_all('div', attrs={'class':'main_price'})
 ```
+The script that you write should be modular and flexible though. You should be able to put in any spiders player URL and get back their stats. In order to do that, your script should have this skeleton:
+
+```python
+from bs4 import BeautifulSoup  
+import requests
+
+def get_html(url):
+     # logic for GET HTTP request here
+
+def get_stats_from_html(page_response):
+     # logic for parsing HTML and getting stats
+     
+def format_stats_into_dictionary(stats):
+     # logic for converting to dictionary here 
+
+def scrape_stats(url):
+     page_response = get_html(url)
+     parse_html_stats = get_stats_from_html(page_response)
+     stats_dictionary = format_stats_into_dictionary(parse_html_stats)
+     
+# you should be able to feed any player url and your code will be able to scrape the stats     
+get_html("http://theaudl.com/spiders/players/szaccaro")
+
+```
