@@ -34,18 +34,36 @@ Your goal is to scrape the player page, and gather all regular season data and p
    } # and so on
 }
 ```
+This means you will need to write a script that:
+
+1. does an HTTP request to http://theaudl.com/spiders/players/szaccaro and grabs the HTML of the page with ``` import requests ``` package
+2. store the html in a variable
+3. use ```from bs4 import BeautifulSoup``` to parse the HTML and extract elements
+4. parse the HTML into the proposed dictionary above
+
+The packages you will need:
+
+- ```requests``` install with ```$ pip install requests```
+- ```BeautifulSoup``` you may have to install this with ```$ pip install beautifulsoup4```
+
+Here is an example script of using the two
 
 ```python
-from bs4 import BeautifulSoup
+# import the packages we will use
+from bs4 import BeautifulSoup  
 import requests
+
+# this is the link we will scrape
 page_link ='https://www.website_to_crawl.com'
+
 # fetch the content from url
 page_response = requests.get(page_link, timeout=5)
+
 # parse html
 page_content = BeautifulSoup(page_response.content, "html.parser")
 
 # extract all html elements where price is stored
-prices = page_content.find_all(class_='main_price')
+prices = page_content.find_all(class_='main_price')  # find content on the HTML page with classes and ids
 # prices has a form:
 #[<div class="main_price">Price: $66.68</div>,
 # <div class="main_price">Price: $56.68</div>]
