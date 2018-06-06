@@ -95,3 +95,12 @@ def scrape_stats(url):
 scrape_stats("http://theaudl.com/spiders/players/szaccaro")
 
 ```
+
+### 2. Add Bootstrap elements to your Index.html file on your website
+You have your ```index.html``` for this week. In this assignment you will add bootstrap 4 elements to your app. I think the bootstrap.min.css in your public directory is bootstrap 4, you should double check. If it isn't, please download the bootstrap 4 package from https://getbootstrap.com/ and add the bootstrap.min.css to your public directory. Here are the elements you will add:
+
+1. change the navbar color https://getbootstrap.com/docs/4.0/components/navbar/#color-schemes
+2. add a carosoul with image links that you'd like on your site https://getbootstrap.com/docs/4.1/components/carousel/ (NOTE: you need to also make sure that your index.html imports bootstrap.min.js)
+3. add an intro to your page in a jumbotron https://getbootstrap.com/docs/4.1/components/jumbotron/
+4. add a button that will open a modal https://getbootstrap.com/docs/4.1/components/modal/#modal-components
+5. add a table of information https://getbootstrap.com/docs/4.1/content/tables/
