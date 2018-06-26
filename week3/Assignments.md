@@ -53,4 +53,35 @@ def unscramble(string):
 
 # this is the messed up string
 string = ".4elup$c.$.eb.regnol.on.ll'i.dn$.,evol.ym.nrows.4ub.eb.,4on.4liw.uoh4.fi.,ro.;em$n.yh4.esufer.dn$.reh4$f.yh4.yned.?oemor.uoh4.4r$.eroferehw.!oemor.,oemor.o"
+
+poem = unscramble(string)
+print poem
 ```
+
+## 3. Python: For-Loopin'
+Write a program which will find all numbers divisible by 7 but **NOT** divisibly by 5, between 2000 and 5200 (both included). The numbers obtained should be printed in a comma-separated sequence on a single line.
+
+To figure out if a number is divisible by 7, you will use the **modulus** ```%``` operator. An example:
+```python
+# modulus prints the REMAINDER of a division operation
+print 14 % 7  # 14 is divisible by 7 so this will print 0
+print 13 % 7  # this will print a remainder of 1!
+print 16 % 7  # this will print a remainder of 2!
+
+# to determine if a number is divisible by 7 you would check:
+num = 39
+if num % 7 == 0:
+   print "The number is divisible by 7!"
+else:
+   print "The number is NOT divisible by 7!"
+   
+# to determine if a number is NOT divisible by 5
+num = 11
+if num % 5 != 0: # notice the exclamation mark ("==" means equals or is the same, "!=" means NOT the same)
+  print "The number is NOT divisible by 5"
+```
+You will write a script that:
+1. **loops** through all numbers between 2000 and 5200 
+2. checks to see if the number is divisible by 7 and NOT divisible by 5
+3. if it is divisible by 7 and not divisible by 5, add the number to an array
+
